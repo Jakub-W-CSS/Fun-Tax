@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="vertical"
+            android:background="#3C1DB8">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#FFF"
+                android:text="Kalkulator Podróży" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#CCC"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+                android:text="Autor: 000000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="20dp"
+            android:text="Dystans w km"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/dystansEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Dystans w km">
+        </EditText>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="20dp"
+            android:text="Zużycie paliwa na 100km"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/zuzycieEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Zużycie paliwa na 100km">
+        </EditText>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="105dp">
+            <RadioButton
+                android:id="@+id/benzinenButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Benzyna (6.50 zł)"
+                android:checked="true"
+                />
+            <RadioButton
+                android:id="@+id/dieselButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Diesel (6.70 zł)"
+                />
+            <RadioButton
+                android:id="@+id/lpgButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="LPG (3.10 zł)"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="20dp"
+            android:text="Liczba pasażerów"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/liczbaPasazEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Liczba pasażerów">
+        </EditText>
+
+        <Button
+            android:id="@+id/obliczButton"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="OBLICZ KOSZT"/>
+
+        <TextView
+            android:id="@+id/wynikTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#33CC33"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
